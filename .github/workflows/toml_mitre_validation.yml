@@ -3,17 +3,17 @@ name: TOML Validation
 on:
   workflow_dispatch:
 
-  jobs:
-    build:
-      runs-ons: ubuntu-latest
+jobs:
+  build:
+    runs-ons: ubuntu-latest
 
-      steps:
-        - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-          wiht:
-            python-version:'3.11.4'
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        wiht:
+          python-version:'3.11.4'
 
-        - run: |
-            pip install requests
-            python development/validation.py
-            python development/validation.py
+      - run: |
+          pip install requests
+          python development/validation.py
+          python development/validation.py
