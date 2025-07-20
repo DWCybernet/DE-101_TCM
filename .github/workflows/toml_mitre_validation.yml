@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-        wiht:
+        with:
           python-version:'3.11.4'
 
       - run: |
